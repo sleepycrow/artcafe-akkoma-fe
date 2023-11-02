@@ -5,7 +5,8 @@ const FeaturesPanel = {
     whoToFollow: function () { return this.$store.state.instance.suggestionsEnabled },
     mediaProxy: function () { return this.$store.state.instance.mediaProxyAvailable },
     textlimit: function () { return this.$store.state.instance.textlimit },
-    uploadlimit: function () { return fileSizeFormatService.fileSizeFormat(this.$store.state.instance.uploadlimit) }
+    uploadlimit: function () { return fileSizeFormatService.fileSizeFormat(this.$store.state.instance.uploadlimit) },
+    albums: function () { return this.$store.state.instance.albumsAvailable }
   }
 }
 
